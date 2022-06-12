@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { Heading as HeadingText } from "@chakra-ui/react";
+import { Heading as HeadingUI } from "@chakra-ui/react";
 import { Tooltip } from "./Tooltip";
 
 export const FONT_FAMILY = "'Inter', sans-serif";
@@ -54,7 +54,7 @@ export const Heading = ({
 
   return (
     <Tooltip label={toolTip}>
-      <HeadingText
+      <HeadingUI
         as={type}
         mb={mute ? 0 : 5}
         {...rest}
@@ -62,7 +62,7 @@ export const Heading = ({
         fontFamily={FONT_FAMILY}
       >
         {children}
-      </HeadingText>
+      </HeadingUI>
     </Tooltip>
   );
 };

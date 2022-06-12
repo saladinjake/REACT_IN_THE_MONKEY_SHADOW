@@ -1,7 +1,5 @@
 import { Flex } from "@chakra-ui/layout";
-
 import { Button, IconButton, Link, Text } from "components/shared/lib";
-
 import { BsPlus, BsDash } from "react-icons/bs";
 
 export const Counter = ({ qty = 1, onQtyIncrease, onQtyDecrease, type2 }) => {
@@ -55,7 +53,7 @@ export const BuyItem = ({
   responsive,
   ...rest
 }) => {
-
+  
   const item =
     cart.data && [...cart.data].find((item) => item.productId === data.id);
 
@@ -70,15 +68,23 @@ export const BuyItem = ({
   };
 
   const renderButton = (onClick) => (
-    <>
+    <Button
+      variant="primary"
+      leftIcon={<CartIcon />}
+      responsive={responsive && <CartIcon />}
+      {...rest}
+      onClick={onClick}
+      disabled={!cart.isReady}
+    >
       {text}
-    </>
+    </Button>
   );
 
   return (
     <>
       {inCartLabel && item ? inCartLabel : null}
 
+   
     </>
   );
 };
