@@ -1,12 +1,18 @@
 const colors = {
   brand: {
-    // Brand coloring
+    // Brand
     primary: "#43B263",
     primaryLight: "#E8F8EC",
     secondary: "#003D59",
     secondaryLight: "#F0FAFF",
     //
-    // Standard coloring
+    // State
+    success: "#27AE7f",
+    error: "#EB5757",
+    errorLight: "#FFEDED",
+    info: "#2785EC",
+    //
+    // Standard
     black1: "#000000",
     black2: "#1D1D1D",
     black3: "#282828",
@@ -17,13 +23,6 @@ const colors = {
     gray4: "#BDBDBD",
     gray5: "#E9E9E9",
     gray6: "#FAFAFA",
-    //
-    // State coloring
-    success: "#27AE7f",
-    error: "#EB5757",
-    errorLight: "#FFEDED",
-    info: "#2785EC",
-    
   },
 };
 
