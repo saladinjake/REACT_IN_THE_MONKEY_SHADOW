@@ -1,4 +1,5 @@
-
+import "../core/assets/styles/globals.css"
+import "../core/assets/styles/main.scss"
 import React from "react"
 import { ChakraProvider } from "@chakra-ui/react";
 import NextNProgress from 'nextjs-progressbar';
