@@ -1,5 +1,9 @@
 import { Flex } from "@chakra-ui/layout";
+
+
+import { CartIcon } from "components/components/pages";
 import { Button, IconButton, Link, Text } from "components/shared/lib";
+import useAuth from "hooks/useAuth";
 import { BsPlus, BsDash } from "react-icons/bs";
 
 export const Counter = ({ qty = 1, onQtyIncrease, onQtyDecrease, type2 }) => {
@@ -53,7 +57,9 @@ export const BuyItem = ({
   responsive,
   ...rest
 }) => {
-  
+  const auth = useAuth();
+  const { currentUser } = auth;
+
   const item =
     cart.data && [...cart.data].find((item) => item.productId === data.id);
 
@@ -84,7 +90,22 @@ export const BuyItem = ({
     <>
       {inCartLabel && item ? inCartLabel : null}
 
-   
+      {auth.isAuthenticated ? (
+        item ? (
+          <Counter
+            qty={item.qty}
+            onQtyDecrease={handleQtyDecrease}
+            onQtyIncrease={handleQtyIncrease}
+            type2
+          />
+        ) : (
+          renderButton(handleItemBuy)
+        )
+      ) : (
+        <Link href="/signin?redirect=/store" mute>
+          {renderButton(null)}
+        </Link>
+      )}
     </>
   );
 };
