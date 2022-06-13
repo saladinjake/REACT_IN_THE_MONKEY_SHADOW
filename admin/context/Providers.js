@@ -5,8 +5,8 @@ import { ChakraProvider } from "@chakra-ui/react";
 // import store from "../redux/store";
 import SEO from "../next-seo.config";
 import theme from "../theme";
-import AsideContext from "./adminAsideContext";
-import useAside from "hooks/useAdminAside";
+import AsideContext from "./AsideContext";
+import useAside from "hooks/useAside";
 
 function Providers({ children, store: storeProps }) {
   const aside = useAside();

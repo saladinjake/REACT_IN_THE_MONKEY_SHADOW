@@ -465,7 +465,7 @@ const LandingPage = () => {
             type="md-regular"
           >
             The Idea of killing the enemy with his own weapon is just what i needed to take out the Russians Soldiers 
-            on Ukraine's soil
+            on Ukraine's soil.
           </Text>
         </Box>
 

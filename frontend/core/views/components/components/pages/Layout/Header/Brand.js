@@ -1,7 +1,3 @@
-
-
-
-
 import { Heading, Link, Text } from "components/shared/lib";
 import useAuth from "hooks/useAuth";
 
