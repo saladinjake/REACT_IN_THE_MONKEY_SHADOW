@@ -9,7 +9,7 @@ import "../styles/sass/mui.scss";
 import "../styles/sass/order-details.scss";
 import "../styles/sass/product-image-upload.scss";
 
-//import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
+import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
 import "../styles/sass/richtext.scss";
 
 function MyApp({ Component, pageProps }) {
