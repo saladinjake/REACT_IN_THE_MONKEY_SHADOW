@@ -1,0 +1,17 @@
+.payment {
+  &-stage {
+    position: relative;
+
+    &__items {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 32.5px;
+        left: 0;
+        width: 25px;
+        height: auto;
+        border-top: 2px solid #ccc;
+      }
+    }
+  }
+}

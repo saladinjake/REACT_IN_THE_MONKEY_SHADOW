@@ -1,0 +1,88 @@
+$primary: #43b263;
+$primary-light: #e8f8ec;
+
+@mixin phone {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+// Paint all scrollbars
+* {
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: $primary-light;
+    border-radius: 5rem;
+
+    &-thumb {
+      background-color: $primary;
+      border-radius: 5rem;
+    }
+
+    @include phone {
+      width: 3.5px;
+      height: 3.5px;
+    }
+  }
+}
+
+.aside {
+  transition: 0.15s;
+
+  &__main {
+    margin-top: 3px;
+  }
+
+  &__item {
+    &-icon {
+      transition-delay: 0.15s;
+      transition-duration: 0.1s;
+      transition-timing-function: ease-in;
+
+      transform: scale(0.8);
+    }
+  }
+
+  &--close {
+    // width: 55px !important;
+
+    .aside {
+      &__main {
+        overflow-x: hidden;
+      }
+
+      &__close-btn {
+        display: none;
+      }
+
+      &__item {
+        &-text {
+          display: none;
+        }
+
+        &-icon {
+          transform: scale(1);
+        }
+      }
+    }
+  }
+
+  &--open {
+    @include phone {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 500;
+
+      opacity: 0;
+      animation: show 0.4s 1 forwards;
+    }
+  }
+}
+
+@keyframes show {
+  to {
+    opacity: 1;
+  }
+}

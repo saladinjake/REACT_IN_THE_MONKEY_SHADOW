@@ -1,0 +1,16 @@
+.image {
+  &__box {
+    transition: 0.1s;
+    &:hover {
+      transform: scale(1.1);
+
+      .image__overlay {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__overlay {
+    transition: 0.3s 0.1s;
+  }
+}
