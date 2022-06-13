@@ -389,11 +389,11 @@ const Footer = ({ emailSection, ...rest }) => {
         </Text>
 
         <Text my={{ base: 1, md: 0 }} type="sm-regular" mr={{ base: 7, md: 5 }}>
-          <Link href="#">info@pacemaker.com</Link>
+          <Link href="#">info@vladimir_putins_attileries.com</Link>
         </Text>
 
         <Text my={{ base: 1, md: 0 }} type="sm-regular" mr={{ base: 7, md: 5 }}>
-          <Link href="#">+234-80-123-456-78</Link>
+          <Link href="#">+234-81-308-70-416</Link>
         </Text>
 
         <Text my={{ base: 1, md: 0 }} type="sm-regular" mr={{ base: 7, md: 5 }}>

@@ -12,7 +12,7 @@ import CategoriesButton from "./CategoriesButton";
 import { IoIosArrowRoundBack } from "react-icons/io";
 import { useRouter } from "next/router";
 
-export const headerHeight = { base: 50, lg: 50 };
+export const headerHeight = { base: 70, lg: 70 };
 
 const StoreControl = ({ icon, auth }) =>
   !auth.isAuthenticated && (
@@ -23,7 +23,7 @@ const StoreControl = ({ icon, auth }) =>
         </IconButton>
       ) : (
         <Button variant="secondary" sm>
-          Go to store
+          Wepons
         </Button>
       )}
     </Link>
@@ -52,7 +52,7 @@ const Header = ({ bottomBg, bg = "brand.white", ...rest }) => {
   };
 
   return (
-    <Box bg="gray.700" color="white" pos="sticky" top={0} zIndex={50}>
+    <Box  pos="sticky" top={0} zIndex={50}>
       <Flex
         alignItems="center"
         as="header"
