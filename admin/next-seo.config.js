@@ -1,10 +1,10 @@
 const SEO = {
-  title: "Silver Dreams",
-  description: "An E-Commerce for electronics",
+  title: "putin app",
+  description: "An E-Commerce ",
   openGraph: {
     type: "website",
     locale: "en_NG",
-    url: "https://www.silverdreams.test",
+    url: "",
   },
   twitter: {
     handle: "@handle",
