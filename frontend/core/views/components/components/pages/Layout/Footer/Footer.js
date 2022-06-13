@@ -46,14 +46,15 @@ const Footer = ({ emailSection, ...rest }) => {
       maxW={breakpoints.xxl}
       mx="auto"
       pos="relative"
-      bg="brand.primaryLight"
+      bg="brand.black"
       {...rest}
+      color="brand.white"
     >
-      {/* {emailSection && (
+      {emailSection && (
         <Section
           maxW={breakpoints.xxl}
-          bg="brand.secondary"
-          color="brand.white"
+          bg="gray.700"
+          color="white"
           py={20}
         >
           <Flex
@@ -111,7 +112,7 @@ const Footer = ({ emailSection, ...rest }) => {
             </Box>
           </Flex>
         </Section>
-      )} */}
+      ) }
 
       <Link
         href={{
@@ -142,6 +143,7 @@ const Footer = ({ emailSection, ...rest }) => {
         maxW={breakpoints.xl}
         mx="auto"
         // border="2px"
+        bg="brand.black"
       >
         <Grid
           templateColumns={{
@@ -160,22 +162,22 @@ const Footer = ({ emailSection, ...rest }) => {
             <UnorderedList spacing={3} listStyleType="none" m={0}>
               <ListItem w={{ base: "auto", md: "fit-content" }}>
                 <Link href="#">
-                  <Text type="sm-regular">Adidas</Text>
+                  <Text type="sm-regular">Bombs</Text>
                 </Link>
               </ListItem>
               <ListItem w={{ base: "auto", md: "fit-content" }}>
                 <Link href="#">
-                  <Text type="sm-regular">Puma</Text>
+                  <Text type="sm-regular">Tankers</Text>
                 </Link>
               </ListItem>
               <ListItem w={{ base: "auto", md: "fit-content" }}>
                 <Link href="#">
-                  <Text type="sm-regular">Reebok</Text>
+                  <Text type="sm-regular">Helicopters</Text>
                 </Link>
               </ListItem>
               <ListItem w={{ base: "auto", md: "fit-content" }}>
                 <Link href="#">
-                  <Text type="sm-regular">Nike</Text>
+                  <Text type="sm-regular">Riffles</Text>
                 </Link>
               </ListItem>
             </UnorderedList>

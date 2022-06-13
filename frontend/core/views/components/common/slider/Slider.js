@@ -56,7 +56,7 @@ const Slider = ({ height, children, auto, speed }) => {
   );
 
   return (
-    <Container
+    <div
       height={height}
       length={length}
       percent={percent}
@@ -77,7 +77,7 @@ const Slider = ({ height, children, auto, speed }) => {
         {children[children.length - 1]}
         {children}
       </div>
-    </Container>
+    </div>
   );
 };
 

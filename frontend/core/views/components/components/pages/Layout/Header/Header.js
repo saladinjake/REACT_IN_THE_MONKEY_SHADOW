@@ -52,7 +52,7 @@ const Header = ({ bottomBg, bg = "brand.white", ...rest }) => {
   };
 
   return (
-    <Box pos="sticky" top={0} zIndex={50}>
+    <Box bg="gray.700" color="white" pos="sticky" top={0} zIndex={50}>
       <Flex
         alignItems="center"
         as="header"

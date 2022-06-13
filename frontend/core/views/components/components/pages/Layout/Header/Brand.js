@@ -14,7 +14,7 @@ const Brand = ({ ...rest }) => {
     <Heading type="h1" m={0} {...rest}>
       <Link href={href} mute>
         <Text type="md-bold" m={0}>
-        PACE MAKER
+        PUTINS ARSENALS
         </Text>
       </Link>
     </Heading>
