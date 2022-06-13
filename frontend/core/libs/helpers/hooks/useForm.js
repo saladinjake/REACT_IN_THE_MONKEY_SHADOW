@@ -91,6 +91,9 @@ const useForm = ({ handleFormSubmit, initialFieldsProps }) => {
           formSubmitState.isSubmitting || formSubmitState.isRedirecting
         }
         display={{ base: "flex", md: "none" }}
+        bg="gray.700"
+        boxShadow="-50px 50px 25px rgba(0, 0, 0, .08)"
+       color="white"
       >
         {props.text}
       </Button>
@@ -103,6 +106,9 @@ const useForm = ({ handleFormSubmit, initialFieldsProps }) => {
         }
         loadingText="please wait..."
         display={{ base: "none", md: "flex" }}
+         bg="gray.700"
+         boxShadow="-50px 50px 25px rgba(0, 0, 0, .08)"
+         color="white"
       >
         {props.text}
       </Button>
