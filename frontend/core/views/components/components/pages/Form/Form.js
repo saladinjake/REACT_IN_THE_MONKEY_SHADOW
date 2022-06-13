@@ -58,11 +58,12 @@ export const Form = ({
         maxW="450px"
         mx="auto"
         borderRadius="0.5rem"
-        border="1px"
-        borderColor="brand.gray5"
+        //border="1px"
+        //borderColor="brand.gray5"
         bg="brand.white"
         p={5}
         position="relative"
+         boxShadow="-50px 50px 25px rgba(0, 0, 0, .08)"
       >
         <Box as="header" flexWrap="wrap" textAlign="center" mb={5}>
           <Heading type="h4" as="h1" color="brand.primary">

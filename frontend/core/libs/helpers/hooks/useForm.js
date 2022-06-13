@@ -12,7 +12,7 @@ const initialFormSubmitState = {
   hasSubmitted: false,
 };
 
-const useForm = ({ doSubmit, initialFieldsProps }) => {
+const useForm = ({ handleFormSubmit, initialFieldsProps }) => {
   const router = useRouter();
   const formRef = useRef();
 
@@ -42,7 +42,7 @@ const useForm = ({ doSubmit, initialFieldsProps }) => {
         isSubmitting: true,
       });
 
-      const redirectPath = await doSubmit(fieldsObj, router);
+      const redirectPath = await handleFormSubmit(fieldsObj, router);
       // As soon as `doSubmit` completes
       setFormSubmitState({ ...initialFormSubmitState, hasSubmitted: true });
 

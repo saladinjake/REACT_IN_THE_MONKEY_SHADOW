@@ -46,9 +46,9 @@ const Footer = ({ emailSection, ...rest }) => {
       maxW={breakpoints.xxl}
       mx="auto"
       pos="relative"
-      bg="brand.black"
+      bg="gray.700"
       {...rest}
-      color="brand.white"
+      color="white"
     >
       {emailSection && (
         <Section

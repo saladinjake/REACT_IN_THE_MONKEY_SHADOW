@@ -60,6 +60,7 @@ const Header = ({ bottomBg, bg = "brand.white", ...rest }) => {
         h={headerHeight}
         maxW={breakpoints.xxl}
         mx="auto"
+        zIndex="2"
         bg={bg}
         color="brand.secondary"
         boxShadow="0 2px 15px rgba(0, 0, 0, .03), 0 5px 15px rgba(0, 0, 0, .053)"
