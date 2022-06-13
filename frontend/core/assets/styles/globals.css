@@ -1,25 +1,92 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, monospace,  
-    "Gill Sans Extrabold", sans-serif, ui-serif,fantacy,cursive;
-}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap");
 
 html {
-  -webkit-text-size-adjust: 100% !important;
-  -ms-text-size-adjust: 100% !important;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
+  /* Brand */
+  --primary: #43b263;
+  --primary-light: #e8f8ec;
+  --secondary: #003d59;
+  --secondaryLight: #f0faff;
+  /* State */
+  --success: #27ae7f;
+  --error: #eb5757;
+  --info: #2785ec;
+  /* Standard */
+  --black1: #000000;
+  --black2: #1d1d1d;
+  --black3: #282828;
+  --white: #ffffff;
+  --gray1: #333333;
+  --gray2: #5b5b5b;
+  --gray3: #929292;
+  --gray4: #bdbdbd;
+  --gray5: #e9e9e9;
+  --gray6: #fafafa;
 }
 
 * {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+}
+
+/* body {
+  overflow-x: hidden;
+} */
+
+/* Stylings for The Tab button */
+[testid="tab-header"] button {
+  opacity: 0.75;
+  transition: 0.1s;
+  position: relative;
+  font-weight: bold;
+  transform: scale(0.9);
+}
+[testid="tab-header"] button::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary);
+  transform: scaleX(0);
+  transition: 0.1s;
+}
+[testid="tab-header"] button::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  clip-path: polygon(100% 0, 0 0, 49% 71%);
+  background-color: var(--primary);
+  opacity: 0;
+  transform: translate(-50%, 100%);
+  transition: 0.1s;
+}
+
+[testid="tab-header"].secondaryActiveBg button::before,
+[testid="tab-header"].secondaryActiveBg button::after {
+  background-color: var(--secondary);
+}
+
+[testid="tab-header"] button.active {
+  transform: scale(1);
+  color: var(--primary);
+}
+[testid="tab-header"].secondaryActiveBg button.active {
+  color: var(--secondary);
+}
+
+[testid="tab-header"] button:hover {
+  opacity: 1;
+}
+[testid="tab-header"] button:hover::before,
+[testid="tab-header"] button.active::before {
+  transform: scaleX(1);
+}
+[testid="tab-header"] button.active::after {
+  opacity: 1;
 }

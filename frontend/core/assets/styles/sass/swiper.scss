@@ -1,0 +1,25 @@
+$primary: #43b263;
+$primary-light: #e8f8ec;
+
+%style {
+  display: grid;
+  place-items: center;
+  padding: 8px 13px;
+  transform: scaleY(0.9);
+  border-radius: 50%;
+  font-weight: 900;
+  font-size: 25px !important;
+  color: $primary !important;
+  background-color: $primary-light !important;
+}
+
+.swiper-button {
+  &-next:after {
+    @extend %style;
+    padding-right: 12px;
+  }
+  &-prev:after {
+    @extend %style;
+    padding-left: 12px;
+  }
+}
