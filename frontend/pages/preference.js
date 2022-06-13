@@ -1,6 +1,6 @@
 import { ButtonGroup } from "@chakra-ui/button";
 import { Box, Flex, Grid, GridItem } from "@chakra-ui/layout";
-import { Button, Heading, Icon, Text, Modal, TextField } from "components/lib";
+import { Button, Heading, Icon, Text, Modal, TextField } from "components/shared/lib";
 import { Layout, PageHeader, Section } from "components/components/pages";
 import useForm from "hooks/useForm";
 import { FaPen, FaTrashAlt } from "react-icons/fa";
@@ -170,13 +170,13 @@ const EditPreferencePage = () => {
       label: "Address",
       textarea: true,
       minH: "40px",
-      value: "85 Ayilara street, ojuelegba, Lagos state, Nigeria",
+      value: "Ikoyi, Lagos state, Nigeria",
     },
     {
       id: "phone-number",
       label: "Phone Number",
       type: "number",
-      value: "07032917504",
+      value: "08130870416",
     },
   ];
 
@@ -184,7 +184,7 @@ const EditPreferencePage = () => {
     {
       id: "card-name",
       label: "Card Name",
-      value: "Salau Oluwole Olorunjuedalo",
+      value: "Alan John Smith",
     },
     {
       id: "card-type",
